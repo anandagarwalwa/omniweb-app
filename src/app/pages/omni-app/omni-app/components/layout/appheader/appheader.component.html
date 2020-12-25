@@ -1,0 +1,59 @@
+<nav id="headerbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- <div class="container-fluid"> -->
+    <a class="navbar-brand" href="#">
+        <img src="../../../../assets/app-images/omni-logo-new.png">
+        <span class="logo-text">omni</span>
+    </a>
+    <button type="button" id="demo-one" class="btn">
+        <i class="fas fa-align-justify text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto">
+            <div class="newsearch-box" id="IsSearchBox">
+                <input class="form-control" type="text" id="searchBoxPopup" name="searchBoxPopup" placeholder="Search Explore...">
+                <button class="search-Button" href="#" id="searchButton">
+                    <i class="material-icons">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </i>
+                </button>
+            </div>
+            <div class="dropdown-notification dropdown notification_List">
+                <button type="button" class="bell-icon-main btn btn-group-lg dropdown-toggle notification_List" data-toggle="dropdown">
+                    <div class="bell-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <div class="badge-section" id="totalNotification">
+                    </div>
+                </button>
+                <div class="dropdown-menu notification-menu">
+                    <ul>
+                        <li class="noti-header">NOTIFICATIONS</li>
+                    </ul>
+                </div>
+            </div>
+            <!-----Pic-->
+            <div class="pic-font-section ">
+                <div class="dropdown">
+                    <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
+                        <span id="usernameid">Robbie Swaddle</span>
+                    </button>
+                    <img id="userimage" src="../../../../assets/app-images/icon.jpg" class="rounded-circle img-fluid dropdown-toggle" style="cursor: pointer;" data-toggle="dropdown">
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#" route-link route-href="profile">
+                            <div class="drop-down-btn">
+                                <button type="button" class="btn btn-group-lg btn-primary">Profile</button>
+
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="../src/components/login/login.html">
+                            <div class="drop-down-btn">
+                                <button type="button" id="userlogout" class="btn btn-group-lg btn-danger">Logout</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+</nav>

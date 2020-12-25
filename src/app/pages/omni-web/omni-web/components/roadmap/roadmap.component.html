@@ -1,0 +1,300 @@
+<div class="roadmap-page">
+    <section class="road-map">
+        <div class="points">
+            <div class="point point-floating-1"></div>
+            <!-- <div class="point point-floating-2"></div> -->
+            <div class="point point-floating-3"></div>
+            <div class="point point-floating-4"></div>
+            <div class="point point-floating-5"></div>
+            <div class="point point-floating-6"></div>
+            <div class="point point-floating-7"></div>
+            <div class="point point-floating-8"></div>
+            <div class="point point-floating-9"></div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="hero-text">
+                        <h1>Help us define our roadmap</h1>
+                    </div>
+                    <div class="add-request">
+                        <button class="btn" (click)="openModalDialog()">
+                            Add Request
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':display}">
+            <!-- modal-dialog -->
+            <div class="modal-dialog" role="document">
+                <!-- modal-content -->
+                <div class="modal-content">
+                    <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                        <!-- modal-header -->
+                        <div class="modal-header">
+                            <h3>Add Request</h3>
+                            <button type="button" class="close" aria-label="Close" type="reset" (click)="closeModalDialog()"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <!-- <h4 class="modal-title">Login</h4> -->
+                        </div>
+
+                        <!-- modal-body -->
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="title" class="setFont">Title</label>
+                                <input type="text" class="form-control" name="title" [(ngModel)]="Requestmodel.title" #title="ngModel" [ngClass]="{ 'is-invalid': f.submitted && title.invalid}" required />
+                                <div *ngIf="f.submitted && title.invalid" class="invalid-feedback">
+                                    <div *ngIf="title.errors.required" class="setFont">Title is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="description" class="setFont">Description</label>
+                                <textarea class="form-control" name="description" [(ngModel)]="Requestmodel.description" #description="ngModel" [ngClass]="{ 'is-invalid': f.submitted && description.invalid }" required></textarea>
+                                <div *ngIf="f.submitted && description.invalid " class="invalid-feedback">
+                                    <div *ngIf="description.errors.required" class="setFont">Description is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="setFont">Email</label>
+                                <input type="text" class="form-control" name="email" [(ngModel)]="Requestmodel.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid}" required email />
+                                <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                                    <div *ngIf="email.errors.required" class="setFont">Email is required</div>
+                                    <div *ngIf="email.errors.email" class="setFont">Email must be a valid email address</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- modal-footer -->
+                        <div class="modal-footer">
+                            <button class="btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-danger" type="reset" (click)="closeModalDialog()">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="road-map-table">
+        <div class="points banner">
+            <div class="point point-floating-1"></div>
+            <!-- <div class="point point-floating-2"></div> -->
+            <div class="point point-floating-3"></div>
+            <div class="point point-floating-4"></div>
+            <div class="point point-floating-5"></div>
+            <div class="point point-floating-6"></div>
+            <div class="point point-floating-7"></div>
+            <div class="point point-floating-8"></div>
+            <div class="point point-floating-9"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="table-title">Request</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div class="table-title">Progess</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <!-- <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="request-common">
+                                            <div class="request-field">
+                                                <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+                                                <span class="request-number">102</span>
+                                            </div>
+                                            <div class="request-text">
+                                                <span>Add additional connectors</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-btn">
+                                            <button class="btn blue">planned</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="request-common">
+                                            <div class="request-field">
+                                                <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+                                                <span class="request-number">65</span>
+                                            </div>
+                                            <div class="request-text">
+                                                <span>Improve looker functionality</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-btn">
+                                            <button class="btn yellow">in progess</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="request-common">
+                                            <div class="request-field">
+                                                <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+                                                <span class="request-number">17</span>
+                                            </div>
+                                            <div class="request-text">
+                                                <span>Export Functionality</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-btn">
+                                            <button class="btn yellow">in progess</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="request-common">
+                                            <div class="request-field">
+                                                <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+                                                <span class="request-number">32</span>
+                                            </div>
+                                            <div class="request-text">
+                                                <span>Add Mobile App</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-btn">
+                                            <button class="btn green">completed</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="request-common">
+                                            <div class="request-field">
+                                                <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+                                                <span class="request-number">65</span>
+                                            </div>
+                                            <div class="request-text">
+                                                <span>Improve looker functionality</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-btn">
+                                            <button class="btn yellow">in progess</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="request-common">
+                                            <div class="request-field">
+                                                <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+                                                <span class="request-number">17</span>
+                                            </div>
+                                            <div class="request-text">
+                                                <span>Export Functionality</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-btn">
+                                            <button class="btn yellow">in progess</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="request-common">
+                                            <div class="request-field">
+                                                <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+                                                <span class="request-number">32</span>
+                                            </div>
+                                            <div class="request-text">
+                                                <span>Add Mobile App</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-btn">
+                                            <button class="btn green">completed</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody> -->
+                            <tr *ngFor="let item of items">
+                                <td>
+                                    <div class="request-common">
+                                        <div class="request-field setCursor" (click)="openRequestModelDialog(item.Id)">
+                                            <i class="far fa-arrow-alt-circle-up"></i>
+                                            <span class="request-number">{{item.votesCount}}</span>
+                                        </div>
+                                        <div class="request-text">
+                                            <span>{{item.Title}}</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <!--*ngFor="let list of item2 | keys"-->
+                                    <div class="table-btn">
+                                        <button class="btn blue">{{item.Status}}</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayRequest}">
+            <!-- modal-dialog -->
+            <div class="modal-dialog" role="document">
+                <!-- modal-content -->
+                <div class="modal-content">
+                    <form name="form" (ngSubmit)="request.form.valid && onVotesSubmit()" #request="ngForm" novalidate>
+                        <!-- modal-header -->
+                        <div class="modal-header">
+                            <h3>Request</h3>
+                            <button type="button" class="close" aria-label="Close" type="reset" (click)="closeRequestModelDialog()"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <!-- <h4 class="modal-title">Login</h4> -->
+                        </div>
+
+                        <!-- modal-body -->
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="rqemail" class="setFont">Email</label>
+                                <input type="text" class="form-control" name="rqemail" (change)="CheckUniqueEmail()" [(ngModel)]="voteModel.email" #rqemail="ngModel" [ngClass]="{ 'is-invalid': request.submitted && rqemail.invalid}" required email/>
+                                <div *ngIf="request.submitted && rqemail.invalid" class="invalid-feedback">
+                                    <div *ngIf="rqemail.errors.required" class="setFont">Email is required</div>
+                                    <div *ngIf="rqemail.errors.email" class="setFont">Email must be a valid email address</div>
+                                    <!-- <div *ngIf="isUniqueEmail" class="setFont">Email already exites </div> -->
+                                </div>
+                                <div *ngIf="isUniqueEmail" class="UniqueEmailError">
+                                    <div class="setFont">Email already exites </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- modal-footer -->
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" [disabled]="isUniqueEmail">Submit</button>
+                            <button type="button" class="btn btn-danger" type="reset" (click)="closeRequestModelDialog()">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="spacer"></div>

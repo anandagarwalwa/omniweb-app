@@ -1,0 +1,33 @@
+.contact-us {
+    padding: 150px 0px 30px;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    color: #111B47;
+    font-size: 96px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.contact-form input.form-control {
+    height: calc(1.5em + 0.75rem + 10px);
+}
+
+.contact-btn .btn {
+    font-size: 18px;
+    background-color: #111B47;
+    font-weight: 400;
+    color: #fff;
+    height: 36px;
+    line-height: 18px;
+    width: 100%;
+}
+
+.contact-btn .btn:hover {
+    background-color: #5562D4;
+    transition: all 0.1s ease 0.1s;
+}

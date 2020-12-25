@@ -1,0 +1,263 @@
+.main-header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    z-index: 9999;
+    padding: 0px 33px;
+    background-color: #FFF;
+    transition: all 0.3s ease 0.3s;
+}
+
+.main-header .navbar {
+    padding: 0px;
+}
+
+.main-header.fixed-top {
+    box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.33);
+    transition: all 0.3s ease 0.3s;
+}
+
+.logo-text {
+    margin-left: 15px;
+    color: #37447E;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+.sign-up {
+    margin-left: 30px;
+}
+
+.sign-up .btn {
+    background-color: #111B47;
+    color: #fff;
+    padding: 7px 35px;
+    text-transform: capitalize;
+}
+
+.sign-up .btn:hover {
+    background-color: #3751FF;
+    transition: all 0.2s ease 0.2s;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 30px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 24px 22px;
+    color: #2A2A2A;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #3751FF;
+    transition: all 0.2s ease 0.2s;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.c-menu__arrow {
+    position: relative;
+    right: 0;
+    transform: scale(1);
+    transform-origin: right center;
+}
+
+.c-menu__arrow>svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-left: .5rem;
+    transform-origin: center;
+    transition: transform .3s;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.main-dropdown .dropdown-item {
+    padding: 10px 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #767680;
+}
+
+.main-dropdown .dropdown-item:hover {
+    color: #3751FF;
+    transition: all 0.2s ease 0.2s;
+    text-decoration: dashed !important;
+}
+
+.main-dropdown .dropdown-item:last-child {
+    border-bottom: 0px;
+}
+
+.main-dropdown {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    transform: scale(0);
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+    background-clip: padding-box;
+    z-index: 9000;
+    padding: 20px 0px;
+    background-color: #FFF;
+    min-width: 260px;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .05), 0 40px 34px -16px rgba(0, 0, 0, .08), 0 6px 4px -4px rgba(0, 0, 0, .06), 0 16px 16px -8px rgba(0, 0, 0, .12);
+}
+
+.dropdown:hover .main-dropdown {
+    transform: scale(1);
+    visibility: visible;
+    margin-top: 0px;
+    opacity: 1;
+    transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+}
+
+.main-dropdown:before {
+    background-color: #111B47;
+    width: 100%;
+    height: 5px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    content: '';
+}
+
+// .main-dropdown:after {
+//     border-bottom: 11px solid #FFF;
+//     top: -10px;
+// }
+// .main-dropdown:before,
+// .main-dropdown:after {
+//     border-left: 11px solid transparent;
+//     border-right: 11px solid transparent;
+//     content: "";
+//     display: inline-block;
+//     position: absolute;
+//     left: auto;
+//     right: 16px;
+// }
+//check
+// .navbar-nav{
+//     margin-right: 200px;
+// }
+// .sign-up{
+//     position: fixed;
+//     right:0;
+//     margin-right: 33px;
+//     display: block;
+//     transition-duration: .5s;
+//     transition-timing-function: cubic-bezier(.39,-.16,.4,1.21);
+//     transform-origin: 193px 23px;
+//     backface-visibility: hidden;
+//     -webkit-backface-visibility: hidden;
+// }
+// media query
+// @media only screen and (max-width: 991px) {
+//     // humburger
+//     .navbar-toggler.collapsed .icon-bar,
+//     .navbar-toggler .icon-bar {
+//         display: block;
+//         background-color: #37447E;
+//         width: 24px;
+//         height: 2px;
+//         border-radius: 1px;
+//     }
+//     .navbar-toggler .icon-bar+.icon-bar {
+//         margin-top: 6px;
+//     }
+//     .header-bottom .navbar-light .navbar-toggler.collapsed {
+//         color: transparent;
+//         border: none;
+//         border-radius: 0;
+//         transition: all 0.3s;
+//         padding: 10px 12px;
+//     }
+//     .header-bottom .navbar-light .navbar-toggler {
+//         padding: 10px 12px;
+//         color: transparent;
+//         transition: all 0.3s;
+//         border: none;
+//         outline: none;
+//     }
+//     .navbar-toggler .icon-bar:first-child {
+//         transform: rotate(-45deg) translate(1px, 0px);
+//         transition: all 0.3s;
+//         position: relative;
+//         top: 4px;
+//     }
+//     .navbar-toggler .icon-bar:nth-child(2) {
+//         transition: all 0.3s;
+//         display: none;
+//     }
+//     .navbar-toggler .icon-bar:last-child {
+//         transform: rotate(45deg) translate(0px, -1px);
+//         transition: all 0.3s;
+//         position: relative;
+//         top: -4px;
+//     }
+//     .navbar-toggler.collapsed .icon-bar {
+//         transform: rotate(0deg);
+//         transition: all 0.3s;
+//         position: relative;
+//         top: 0;
+//         display: block;
+//     }
+//     .collapse.navbar-collapse .navbar-nav {
+//         display: flex;
+//         align-items: self-start;
+//     }
+//     .navbar .navbar-collapse.col-auto.collapse {
+//         top: 0;
+//     }
+//     button:focus {
+//         outline: none;
+//     }
+//     .main-header {
+//         padding: 10px 33px;
+//     }
+//     .navbar-nav .nav-item {
+//         width: 100%;
+//         margin: 0px;
+//     }
+//     .main-dropdown {
+//         position: relative;
+//         width: 100%;
+//         top: 0;
+//         left: 0;
+//         display: none;
+//         border: 0px;
+//         box-shadow: none;
+//         padding: 0px 0px;
+//     }
+//     .main-dropdown.open {
+//         display: block;
+//         transition: height 0.50 ease !important;
+//     }
+//     .main-dropdown:before,
+//     .main-dropdown:after {
+//         display: none;
+//     }
+//     .navbar-nav .nav-item .nav-link {
+//         padding: 15px 0px;
+//         color: #2A2A2A;
+//     }
+//     .main-dropdown .dropdown-item {
+//         padding: 5px 15px;
+//     }
+//     .sign-up {
+//         margin-left: 0px;
+//         padding-top: 15px;
+//     }
+// }

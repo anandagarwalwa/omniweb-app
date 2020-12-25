@@ -1,0 +1,394 @@
+<div class="pricing-page">
+    <section class="pricing-plans">
+        <div class="points">
+            <div class="point point-floating-1"></div>
+            <!-- <div class="point point-floating-2"></div> -->
+            <div class="point point-floating-3"></div>
+            <div class="point point-floating-4"></div>
+            <div class="point point-floating-5"></div>
+            <div class="point point-floating-6"></div>
+            <div class="point point-floating-7"></div>
+            <div class="point point-floating-8"></div>
+            <div class="point point-floating-9"></div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="hero-text">
+                        <h1>Pricing Plans</h1>
+                    </div>
+                    <div class="slide-toggle">
+                        <div class="toggle-text">MONTHLY</div>
+                        <mat-slide-toggle class="example-margin" [color]="color" [(ngModel)]="checked" (change)="changed()" [checked]="checked" [disabled]="disabled">
+                        </mat-slide-toggle>
+                        <div class="toggle-text">YEARLY</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing-list">
+        <div class="points">
+            <div class="point point-floating-1"></div>
+            <!-- <div class="point point-floating-2"></div> -->
+            <div class="point point-floating-3"></div>
+            <div class="point point-floating-4"></div>
+            <div class="point point-floating-5"></div>
+            <div class="point point-floating-6"></div>
+            <div class="point point-floating-7"></div>
+            <div class="point point-floating-8"></div>
+            <div class="point point-floating-9"></div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div id="only-free" class="list-common">
+                        <div class="card-inside front" #addfrontside>
+                            <div class="list-header">
+                                <span class="list-version">FREE</span>
+                                <div class="price-img">
+                                    <img src="../../../assets/images/free-01.png" alt="">
+                                </div>
+                                <div class="main-duration">
+                                    <div class="t-p-price">
+                                        <span class="price-symbol">$</span>
+                                        <p class="price">0</p>
+                                        <span class="duration">/ Mo</span>
+                                    </div>
+                                    <div class="main-user">
+                                        <span>Per User</span>
+                                        <span>per Workshop</span>
+                                    </div>
+                                </div>
+                                <div class="get-started">
+                                    <button class="btn">get started</button>
+                                </div>
+                            </div>
+                            <ul class="list-items">
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    <span>Secure your customer usage</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    <span>View basic analytics</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    <span>Up to 350 customer profiles</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    <span>Custom network name</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    <span>Secure your customer usage</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    <span>View basic analytics</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="card-inside back" #addbackside>
+                            <div class="list-header">
+                                <span class="list-version">PLATINUM</span>
+                                <div class="price-img">
+                                    <img src="../../../assets/images/platinum-01.png" alt="">
+                                </div>
+                                <div class="main-duration">
+                                    <div class="t-p-price">
+                                        <span class="price-symbol">$</span>
+                                        <p class="price">500</p>
+                                        <span class="duration">/ Yr</span>
+                                    </div>
+                                    <div class="main-user">
+                                        <span>Per User</span>
+                                        <span>per Workshop</span>
+                                    </div>
+                                </div>
+                                <div class="get-started">
+                                    <button class="btn">get started</button>
+                                </div>
+                            </div>
+                            <ul class="list-items">
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    <span>Secure your customer usage</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    <span>View basic analytics</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    <span>Up to 350 customer profiles</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    <span>Custom network name</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    <span>Secure your customer usage</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    <span>View basic analytics</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="list-common">
+                        <div class="list-header">
+                            <span class="list-version">PREMIUM</span>
+                            <div class="price-img">
+                                <img src="../../../assets/images/premiun-01.png" alt="">
+                            </div>
+                            <div class="main-duration">
+                                <div class="t-p-price">
+                                    <span class="price-symbol">$</span>
+                                    <p class="price">{{price}}</p>
+                                    <span class="duration">/ {{monthOryear}}</span>
+                                </div>
+                                <div class="main-user">
+                                    <span>Per User</span>
+                                    <span>per Workshop</span>
+                                </div>
+                            </div>
+                            <div class="get-started">
+                                <button class="btn">get started</button>
+                            </div>
+                        </div>
+                        <ul class="list-items">
+                            <li class="list-items-title">EVERYTHING IN FREE PLUS</li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>Secure your customer usage</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>View basic analytics</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>Up to 350 customer profiles</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>Custom network name</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>Secure your customer usage</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>View basic analytics</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="list-common">
+                        <div class="list-header">
+                            <span class="list-version">PREMIUM</span>
+                            <div class="main-duration">
+                                <img src="../../../assets/images/premiun-01.png" alt="">
+                                <span class="duration">$15/user/month</span>
+                            </div>
+                            <div class="get-started">
+                                <button class="btn">get started</button>
+                            </div>
+                        </div>
+                        <ul class="list-items">
+                            <li class="list-items-title">EVERYTHING IN FREE PLUS</li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>Secure your customer usage</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>View basic analytics</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>Up to 350 customer profiles</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>Custom network name</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>Secure your customer usage</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>View basic analytics</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <div class="spacer"></div>
+    <section class="compare-plan">
+        <div class="points">
+            <div class="point point-floating-1"></div>
+            <!-- <div class="point point-floating-2"></div> -->
+            <div class="point point-floating-3"></div>
+            <div class="point point-floating-4"></div>
+            <div class="point point-floating-5"></div>
+            <div class="point point-floating-6"></div>
+            <div class="point point-floating-7"></div>
+            <div class="point point-floating-8"></div>
+            <div class="point point-floating-9"></div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="hero-text">
+                        <h1>Compare Plans</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="compare-chart">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th class="compare-list-title text-center" scope="col">FREE</th>
+                                    <th class="compare-list-title text-center" scope="col">PREMIUM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compare-list-title" colspan="3">USAGE</td>
+                                </tr>
+                                <tr>
+                                    <td class="inside-list">add usage</td>
+                                    <td class="text-center"><img src="../../../assets/images/check.png" alt=""></td>
+                                    <td class="text-center"><img src="../../../assets/images/check.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="inside-list">add usage</td>
+                                    <td></td>
+                                    <td class="text-center"><img src="../../../assets/images/check.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="inside-list">add usage</td>
+                                    <td></td>
+                                    <td class="text-center"><img src="../../../assets/images/check.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="compare-list-title" colspan="3">COLLABORATION</td>
+                                </tr>
+                                <tr>
+                                    <td class="inside-list">add usage</td>
+                                    <td class="text-center"><img src="../../../assets/images/check.png" alt=""></td>
+                                    <td class="text-center"><img src="../../../assets/images/check.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="inside-list">add usage</td>
+                                    <td></td>
+                                    <td class="text-center"><img src="../../../assets/images/check.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="compare-list-title" colspan="3">FEATURES</td>
+                                </tr>
+                                <tr>
+                                    <td class="inside-list">add usage</td>
+                                    <td class="text-center"><img src="../../../assets/images/check.png" alt=""></td>
+                                    <td class="text-center"><img src="../../../assets/images/check.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="inside-list">add usage</td>
+                                    <td></td>
+                                    <td class="text-center"><img src="../../../assets/images/check.png" alt=""></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="points">
+            <div class="point point-floating-1"></div>
+            <!-- <div class="point point-floating-2"></div> -->
+            <div class="point point-floating-3"></div>
+            <div class="point point-floating-4"></div>
+            <div class="point point-floating-5"></div>
+            <div class="point point-floating-6"></div>
+            <div class="point point-floating-7"></div>
+            <div class="point point-floating-8"></div>
+            <div class="point point-floating-9"></div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="hero-text">
+                        <h1>Frequent Questions</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="question-img">
+                        <img src="../../../assets/images/question.png" alt="">
+                    </div>
+                </div>
+            </div> -->
+            <div class="row justify-content-between">
+                <div class="col-md-6">
+                    <div class="questions-common">
+                        <div class="question-title">
+                            <h5>What is a user?</h5>
+                            <p>Build complex alerts with dimension & metric criteria & receive email/slack communications when they fail Build complex alerts with dimension & metric criteria & receive email/slack communications when they fail
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="questions-common">
+                        <div class="question-title">
+                            <h5>What is a user?</h5>
+                            <p>Build complex alerts with dimension & metric criteria & receive email/slack communications when they fail Build complex alerts with dimension & metric criteria & receive email/slack communications when they fail
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="questions-common">
+                        <div class="question-title">
+                            <h5>What is a user?</h5>
+                            <p>Build complex alerts with dimension & metric criteria & receive email/slack communications when they fail Build complex alerts with dimension & metric criteria & receive email/slack communications when they fail
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="questions-common">
+                        <div class="question-title">
+                            <h5>What is a user?</h5>
+                            <p>Build complex alerts with dimension & metric criteria & receive email/slack communications when they fail Build complex alerts with dimension & metric criteria & receive email/slack communications when they fail
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

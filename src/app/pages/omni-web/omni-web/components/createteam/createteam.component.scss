@@ -1,0 +1,101 @@
+.create-team {
+    padding: 150px 0px 50px;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    color: #111B47;
+    font-size: 96px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+.google-btn .btn,
+.work-label {
+    font-size: 36px;
+    color: #111B47;
+    font-weight: 500;
+}
+
+.or-label {
+    font-size: 36px;
+    color: #111B47;
+    font-weight: 500;
+    position: relative;
+    margin: 50px 0px;
+}
+
+.or-label:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #7F8284;
+    width: calc(50% - 50px);
+    height: 2px;
+    content: '';
+}
+
+.or-label:after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: #7F8284;
+    width: calc(50% - 50px);
+    height: 2px;
+    content: '';
+}
+
+.work-email .form-control {
+    max-width: 350px;
+    margin: 30px auto 0px;
+    height: calc(1.5em + 0.75rem + 10px);
+}
+
+.submit-btn {
+    font-size: 28px;
+    background-color: #111B47;
+    font-weight: 500;
+    color: #fff;
+    width: 370px;
+    height: 54px;
+    line-height: 28px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.submit-btn:hover {
+    background-color: #5562D4;
+    transition: all 0.1s ease 0.1s;
+}
+
+.already .btn {
+    font-size: 18px;
+    color: #6E798C;
+    margin: 50px 0px 0px;
+}
+
+.already:hover .btn {
+    color: #111B47;
+    transition: all 0.1s ease 0.1s;
+}
+
+.sign-in .btn {
+    font-size: 18px;
+    color: #5562D4;
+    transition: all 0.1s ease 0.1s;
+}
+
+.sign-in:hover .btn {
+    color: #111B47;
+    transition: all 0.1s ease 0.1s;
+}
+
+.create-form {
+    box-shadow: 0px 5px 34px 0px rgba(36, 36, 59, 0.15);
+    border: 1px solid #d6e0ee;
+    padding: 40px;
+}

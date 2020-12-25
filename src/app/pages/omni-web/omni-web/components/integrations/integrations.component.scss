@@ -1,0 +1,76 @@
+    .main-integrations {
+        padding: 150px 0px 40px;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        color: #111B47;
+        font-size: 96px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    
+    .integrations-common {
+        padding: 20px;
+        background-color: #e2e2ff;
+        border-radius: 10px;
+        margin: 15px 0px;
+        position: relative;
+        z-index: 3;
+        cursor: pointer;
+        border: 5px solid #F5F5FA;
+    }
+    
+    .integrations-common:hover {
+        border: 5px solid #111B47;
+        transition: all 0.2s ease 0.2s;
+    }
+    
+    .integrations-common img {
+        width: 85px;
+    }
+    
+    .integrations-common h4 {
+        color: #111B47;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 25px 0px 15px;
+    }
+    
+    .integrations-common:hover h4 {
+        color: #3751FF;
+        transition: all 0.2s ease 0.2s;
+    }
+    
+    .integrations-common p {
+        margin-bottom: 0px;
+        max-height: 48px;
+        height: 100%;
+        overflow: hidden;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .integartion-map {
+        text-align: center;
+    }
+    
+    .integartion-map img {
+        max-width: 650px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .title-common h4 {
+        font-size: 36px;
+        font-weight: 800;
+        color: #111B47;
+        margin-bottom: 20px;
+    }
+    
+    .title-common {
+        margin-bottom: 30px;
+    }

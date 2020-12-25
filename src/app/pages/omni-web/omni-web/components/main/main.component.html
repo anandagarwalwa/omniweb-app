@@ -1,0 +1,68 @@
+<div class="home-page">
+    <app-banner [commonData]="mainPageData"></app-banner>
+
+    <section class="tab-slider">
+        <div class="points point-content">
+            <div class="point point-floating-1"></div>
+            <!-- <div class="point point-floating-2"></div> -->
+            <div class="point point-floating-3"></div>
+            <div class="point point-floating-4"></div>
+            <div class="point point-floating-5"></div>
+            <div class="point point-floating-6"></div>
+            <div class="point point-floating-7"></div>
+            <div class="point point-floating-8"></div>
+            <div class="point point-floating-9"></div>
+        </div>
+        <div class="container">
+            <!-- <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="title-common text-center field-items">
+                        <h4>Leverage your team's knowledge</h4>
+                        <p>Omni's lightning fast search makes it easy to find what you need and stay in the know on important projects and people.</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div mat-toolbar-row class="job-search-section">
+                        <div class="tab-coman-section">
+                            <mat-tab-group mat-align-tabs="center" [selectedIndex]="selected">
+                                <!--(selectedTabChange)="onTabClick($event)" -->
+                                <mat-tab>
+                                    <ng-template mat-tab-label>
+                                        <span class="tab-text">Explore</span>
+                                    </ng-template>
+                                    <div class="tab-image">
+                                        <img class="img-responsive" src="../../../assets/images/laptop-mockup.png" alt="">
+                                    </div>
+                                </mat-tab>
+
+                                <mat-tab>
+                                    <ng-template mat-tab-label>
+                                        <span class="tab-text">Timeline </span>
+                                    </ng-template>
+                                    <div class="tab-image">
+                                        <img class="img-responsive" src="../../../assets/images/laptop-mockup.png" alt="">
+                                    </div>
+                                </mat-tab>
+
+                                <mat-tab>
+                                    <ng-template mat-tab-label>
+                                        <span class="tab-text">Search</span>
+                                    </ng-template>
+                                    <div class="tab-image">
+                                        <img class="img-responsive" src="../../../assets/images/laptop-mockup.png" alt="">
+                                    </div>
+                                </mat-tab>
+                            </mat-tab-group>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="spacer"></div>
+
+    <app-content-filter [contentData]="mainPageContentData" [pageName]="'main'"></app-content-filter>
+
+</div>

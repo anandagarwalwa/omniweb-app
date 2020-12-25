@@ -1,0 +1,60 @@
+<header class="main-header" id="nav">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="23" cy="22.5" rx="23" ry="22.5" fill="#3751FF"/>
+            <path d="M15.8125 13.6562C15.8125 13.104 16.2602 12.6562 16.8125 12.6562H22.9863C26.1808 12.6562 28.6542 13.5134 30.4065 15.2278C32.1772 16.9422 33.0625 19.357 33.0625 22.4723C33.0625 25.6061 32.1772 28.0394 30.4065 29.7722C28.6542 31.4866 26.1808 32.3437 22.9863 32.3437H16.8125C16.2602 32.3437 15.8125 31.896 15.8125 31.3437V13.6562Z" fill="url(#paint0_linear)"/>
+            <defs>
+            <linearGradient id="paint0_linear" x1="15.8125" y1="12.6562" x2="32.6269" y2="32.709" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0.7"/>
+            <stop offset="1" stop-color="white"/>
+            </linearGradient>
+            </defs>
+            </svg>
+            <span class="logo-text">omni</span>
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown" (click)="clickEvent()">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle"> 
+                        Product
+                        <span class="c-menu__arrow">
+                            <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.19037 0.21967C1.49953 -0.0732233 2.00079 -0.0732233 2.30996 0.21967L6.50016 4.18934L10.6904 0.21967C10.9995 -0.0732233 11.5008 -0.0732233 11.81 0.21967C12.1191 0.512563 12.1191 0.987437 11.81 1.28033L7.05996 5.78033C6.75079 6.07322 6.24954 6.07322 5.94037 5.78033L1.19037 1.28033C0.881205 0.987437 0.881205 0.512563 1.19037 0.21967Z" fill="#18191F"/>
+                            </svg>  
+                        </span>
+                      </a>
+                    <div class="main-dropdown" [ngClass]="{'open': status}">
+                        <a class="dropdown-item" href="/feature">Features
+                        </a>
+                        <a class="dropdown-item" href="/integrations">Integrations
+                        </a>
+                        <a class="dropdown-item" href="/whatsnew">What's news
+                        </a>
+                        <a class="dropdown-item" href="/roadmap">Roadmap
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log In</a>
+                </li>
+            </ul>
+            <div class="sign-up">
+                <button class="btn">
+                    sign up for free
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>

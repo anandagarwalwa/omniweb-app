@@ -1,0 +1,131 @@
+<section class="main-content" (scroll)="onScroll($event)">
+    <div class="points point-content">
+        <div class="point point-floating-1"></div>
+        <!-- <div class="point point-floating-2"></div> -->
+        <div class="point point-floating-3"></div>
+        <div class="point point-floating-4"></div>
+        <div class="point point-floating-5"></div>
+        <div class="point point-floating-6"></div>
+        <div class="point point-floating-7"></div>
+        <div class="point point-floating-8"></div>
+        <div class="point point-floating-9"></div>
+    </div>
+    <div class="container">
+        <!-- <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="title-common text-center field-items">
+                    <h4>Share idea quickly</h4>
+                    <p>Writing it down is as fast as sending an email with Notejoy, so you can effortlessly share with the entire team.</p>
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="common-field ">
+                    <div class="content-common ">
+                        <div class="content-img ">
+                            <img src="{{contentData.imgPath1}}" alt="">
+                        </div>
+                        <div class="title-common">
+                            <h4>{{contentData.imageOneTitle}}</h4>
+                            <p>{{contentData.imgonedescription}}</p>
+                        </div>
+                    </div>
+                    <div class="content-inside just-video">
+                        <video #video1 class="all-video" loop muted onloadedmetadata="this.muted = true">
+                            <source src="{{contentData.imgnboxvideo1}}" type="video/mp4">
+                        </video>
+                        <!-- <img src="{{contentData.imgnboximg1}}" alt=""> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="common-field ">
+                    <div class="content-common">
+                        <div class="title-common">
+                            <h4>{{contentData.imagetwoTitle}}</h4>
+                            <p>{{contentData.imgtwodescription}}</p>
+                        </div>
+                        <div class="content-img right-margin">
+                            <img src="{{contentData.imgPath2}}" alt="">
+                        </div>
+                    </div>
+                    <div class="content-inside just-video">
+                        <!-- <video controls loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+                            <source src="../../../../assets/images/create-video.mp4">
+                        </video> -->
+                        <video #video2 class="all-video" loop muted onloadedmetadata="this.muted = true">
+                            <source src="{{contentData.imgnboxvideo2}}" type="video/mp4">
+                        </video>
+                        <!-- <img src="{{contentData.imgnboxvideo2}}" alt=""> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="common-field ">
+                    <div class="content-common">
+                        <div class="content-img ">
+                            <img src="{{contentData.imgPath3}}" alt="">
+                        </div>
+                        <div class="title-common">
+                            <h4>{{contentData.imagethreeTitle}}</h4>
+                            <p>{{contentData.imgthreedescription}}</p>
+                        </div>
+                    </div>
+                    <div class="content-inside just-video">
+                        <video #video3 class="all-video" loop muted onloadedmetadata="this.muted = true">
+                            <source src="{{contentData.imgnboxvideo3}}" type="video/mp4">
+                        </video>
+                        <!-- <img src="{{contentData.imgnboxvideo3}}" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="spacer"></div>
+<section class="integration ">
+    <div class="points point-content">
+        <div class="point point-floating-1"></div>
+        <div class="point point-floating-3"></div>
+        <div class="point point-floating-5"></div>
+        <div class="point point-floating-7"></div>
+        <div class="point point-floating-9"></div>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="title-common text-center">
+                    <h4>Integrates many data sources & apps</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="integrated-patner google-drive">
+                    <img src="../../../assets/images/google-drive-1.png" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="integrated-patner slack">
+                    <img src="../../../assets/images/slack-1.png" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="integrated-patner mysql">
+                    <img src="../../../assets/images/my-sql-1.png" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="integrated-patner blue-show">
+                    <img src="../../../assets/images/blue-snow-1.png" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="integrated-patner colmun">
+                    <img src="../../../assets/images/colmun-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

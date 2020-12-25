@@ -1,0 +1,53 @@
+.main-footer {
+    padding: 40px 33px;
+    background-color: #5B5B6E;
+}
+
+.logo-text {
+    margin-left: 15px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+.footer-title h6 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    width: 50%;
+}
+
+.footer-common li {
+    margin-bottom: 15px;
+}
+
+.footer-common li:last-child {
+    margin-bottom: 0px;
+}
+
+.footer-common li a {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footer-common li:hover a {
+    color: #111B47;
+    padding-left: 5px;
+    transition: all 0.2s ease 0.2s;
+}
+
+.footer-copy-right h6 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}

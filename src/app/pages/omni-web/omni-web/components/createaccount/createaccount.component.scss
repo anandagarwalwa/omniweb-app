@@ -1,0 +1,84 @@
+.createaccount {
+    padding: 150px 0px 30px;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    color: #111B47;
+    font-size: 96px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.createaccount-btn {
+    text-align: center;
+}
+
+.createaccount-btn .btn {
+    font-size: 24px;
+    background-color: #111B47;
+    font-weight: 400;
+    color: #fff;
+    height: 54px;
+    line-height: 24px;
+    width: 350px;
+}
+
+.createaccount-btn .btn:hover {
+    background-color: #5562D4;
+    transition: all 0.1s ease 0.1s;
+}
+
+.main-createaccount-form {
+    box-shadow: 0px 5px 34px 0px rgba(36, 36, 59, 0.15);
+    border: 1px solid #d6e0ee;
+    padding: 40px;
+}
+
+.main-createaccount-form .form-control {
+    height: calc(1.5em + 0.75rem + 10px);
+    border-radius: 0;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    background-color: none;
+}
+
+::-webkit-input-placeholder {
+    /* Edge */
+    color: #596169 !important;
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #596169 !important;
+}
+
+ ::placeholder {
+    color: #596169 !important;
+}
+
+.already .btn {
+    font-size: 18px;
+    color: #6E798C;
+    margin: 50px 0px 0px;
+}
+
+.already:hover .btn {
+    color: #111B47;
+    transition: all 0.1s ease 0.1s;
+}
+
+.sign-in .btn {
+    font-size: 18px;
+    color: #5562D4;
+    transition: all 0.1s ease 0.1s;
+}
+
+.sign-in:hover .btn {
+    color: #111B47;
+    transition: all 0.1s ease 0.1s;
+}

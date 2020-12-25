@@ -1,0 +1,349 @@
+// media query start
+@media only screen and (max-width: 1199px) {
+    .list-common {
+        padding: 20px !important;
+    }
+    .card-inside {
+        padding: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .hero-text h1 {
+        font-size: 76px !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    p {
+        font-size: 16px !important;
+    }
+    // humburger
+    .navbar-toggler.collapsed .icon-bar,
+    .navbar-toggler .icon-bar {
+        display: block;
+        background-color: #37447E;
+        width: 24px;
+        height: 2px;
+        border-radius: 1px;
+    }
+    .navbar-toggler .icon-bar+.icon-bar {
+        margin-top: 6px;
+    }
+    .header-bottom .navbar-light .navbar-toggler.collapsed {
+        color: transparent;
+        border: none;
+        border-radius: 0;
+        transition: all 0.3s;
+        padding: 10px 12px;
+    }
+    .header-bottom .navbar-light .navbar-toggler {
+        padding: 10px 12px;
+        color: transparent;
+        transition: all 0.3s;
+        border: none;
+        outline: none;
+    }
+    .navbar-toggler .icon-bar:first-child {
+        transform: rotate(-45deg) translate(1px, 0px);
+        transition: all 0.3s;
+        position: relative;
+        top: 4px;
+    }
+    .navbar-toggler .icon-bar:nth-child(2) {
+        transition: all 0.3s;
+        display: none;
+    }
+    .navbar-toggler .icon-bar:last-child {
+        transform: rotate(45deg) translate(0px, -1px);
+        transition: all 0.3s;
+        position: relative;
+        top: -4px;
+    }
+    .navbar-toggler.collapsed .icon-bar {
+        transform: rotate(0deg);
+        transition: all 0.3s;
+        position: relative;
+        top: 0;
+        display: block;
+    }
+    .collapse.navbar-collapse .navbar-nav {
+        display: flex;
+        align-items: self-start;
+    }
+    .navbar .navbar-collapse.col-auto.collapse {
+        top: 0;
+    }
+    button:focus {
+        outline: none !important;
+    }
+    .main-header {
+        padding: 10px 33px !important;
+    }
+    .navbar-nav .nav-item {
+        width: 100% !important;
+        margin: 0px !important;
+    }
+    .main-dropdown {
+        position: relative !important;
+        width: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
+        display: none;
+        border: 0px !important;
+        box-shadow: none !important;
+        padding: 0px 0px !important;
+    }
+    .main-dropdown.open {
+        display: block !important;
+        transition: height 0.50 ease !important;
+        transform: scale(1);
+        visibility: visible;
+        margin-top: 0px;
+        opacity: 1;
+        transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+    }
+    .main-dropdown:before,
+    .main-dropdown:after {
+        display: none !important;
+    }
+    .navbar-nav .nav-item .nav-link {
+        padding: 15px 0px !important;
+        color: #2A2A2A;
+    }
+    .main-dropdown .dropdown-item {
+        padding: 5px 15px !important;
+    }
+    .hero-text h1 {
+        font-size: 58px !important;
+    }
+    .main-hero {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .banner-form .form-control {
+        max-width: 370px !important;
+        margin: 0 auto;
+    }
+    .banner-form {
+        display: block !important;
+    }
+    .banner-form .sign-up {
+        margin-left: 0 !important;
+        text-align: center !important;
+        margin-left: 0px !important;
+        padding-top: 15px !important;
+    }
+    .sign-up {
+        padding: 15px 0px !important;
+        margin: 0px !important;
+    }
+    .content-inside video {
+        width: 100% !important;
+    }
+    // road-map
+    .request-text span {
+        font-size: 15px !important;
+    }
+    .table-btn .btn {
+        min-width: 100% !important;
+        font-size: 14px !important;
+        line-height: 14px !important;
+    }
+    // whatsnew
+    .news-text {
+        margin-bottom: 30px;
+    }
+    .news-image {
+        text-align: left !important;
+    }
+    .main-news .row:nth-child(n+2) {
+        margin-bottom: 40px !important;
+    }
+    // pricing
+    // .main-duration span {
+    //     font-size: 22px !important;
+    // }
+    .price {
+        font-size: 30px !important;
+    }
+    .duration {
+        font-size: 16px !important;
+    }
+    .t-p-price {
+        width: 100% !important;
+        max-width: 110px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .spacer {
+        padding: 25px 0px !important;
+    }
+    .main-hero {
+        top: 54% !important;
+    }
+    .main-content .content-common .title-common h4 {
+        font-size: 22px !important;
+    }
+    .title-common h4 {
+        font-size: 28px !important;
+    }
+    .footer-links li {
+        width: 100% !important;
+    }
+    .footer-copy-right {
+        margin-top: 30px;
+    }
+    .points {
+        display: none !important;
+    }
+    .content-img.right-margin {
+        margin-right: 0 !important;
+        margin-left: 30px !important;
+    }
+    .content-img {
+        margin-right: 30px !important;
+    }
+    .table-title {
+        font-size: 22px !important;
+    }
+    .request-number {
+        font-size: 16px !important;
+    }
+    .main-table .table tbody td {
+        padding: 0.2rem !important;
+    }
+    .main-header {
+        padding: 10px 15px !important;
+    }
+    .main-footer {
+        padding: 10px 15px !important;
+    }
+    .news-text h3 {
+        font-size: 22px !important;
+    }
+    // pricing
+    .compare-list-title {
+        font-size: 16px !important;
+    }
+    .list-items li span {
+        font-size: 16px !important;
+    }
+    .example-margin {
+        margin: 0px 15px !important;
+    }
+    .slide-toggle .toggle-text {
+        font-size: 18px !important;
+    }
+    .list-common {
+        margin-bottom: 20px;
+    }
+    .question-img::before {
+        bottom: -50px !important;
+        right: -160px !important;
+        width: 270px !important;
+        height: 270px !important;
+    }
+    // createteam
+    .submit-btn {
+        font-size: 18px !important;
+        width: 100% !important;
+        line-height: 18px !important;
+    }
+    .google-btn .btn,
+    .work-label {
+        font-size: 22px !important;
+        line-height: 22px !important;
+    }
+    .create-form {
+        padding: 20px !important;
+    }
+    // temp
+    #only-free {
+        min-height: 660px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .main-footer-logo,
+    .footer-common {
+        margin-bottom: 30px;
+    }
+    .request-text {
+        margin-left: 5px !important;
+    }
+    .footer-copy-right {
+        margin-top: 0px !important;
+    }
+    .main-user span {
+        font-size: 16px !important;
+    }
+    .price {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 38px !important;
+    }
+    .banner-form .form-control {
+        min-width: 100% !important;
+    }
+    .content-common {
+        flex-wrap: wrap !important;
+        justify-content: flex-start !important;
+    }
+    .main-content .content-img img {
+        width: 60px !important;
+    }
+    .title-common h4 {
+        margin: 20px 0px !important;
+    }
+    .common-field {
+        margin: 0px !important;
+    }
+    .content-common.content-right {
+        justify-content: flex-start !important;
+    }
+    .content-img.right-margin {
+        margin-left: 0px !important;
+    }
+    .content-right .title-common {
+        text-align: left !important;
+    }
+    .content-common .content-img {
+        order: 1 !important;
+    }
+    .content-common>div {
+        order: 2 !important;
+    }
+    .mat-tab-header-pagination {
+        display: none !important;
+    }
+    .mat-tab-label,
+    .mat-tab-link {
+        font-size: 14px !important;
+    }
+    .createaccount-btn .btn,
+    .setupteam-btn .btn {
+        width: 100% !important;
+    }
+    .main-setupteam-form label {
+        font-size: 18px !important;
+    }
+    .form-control {
+        height: calc(1.5em + 0.75rem + 4px);
+    }
+    .setupteam-btn .btn,
+    .createaccount-btn .btn {
+        font-size: 18px !important;
+        line-height: 18px !important;
+        height: 48px !important;
+    }
+    .content-common {
+        margin-bottom: 10px !important;
+    }
+}

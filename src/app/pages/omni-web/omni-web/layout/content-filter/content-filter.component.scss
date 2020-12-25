@@ -1,0 +1,118 @@
+.content-img {
+    margin-right: 50px;
+}
+
+.content-common {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-common .title-common h4 {
+    margin-bottom: 15px;
+}
+
+.content-inside img {
+    border-radius: 10px;
+    border: 15px solid #101010;
+    box-shadow: 1px 5px 16px 0px rgba(51, 51, 51, 0.33);
+    margin-bottom: 30px;
+    transform: scale(1);
+    transition: all 0.1s ease 0.1s;
+}
+
+.just-video {
+    display: flex;
+    justify-content: center;
+}
+
+.content-inside video {
+    border-radius: 10px;
+    border: 15px solid #101010;
+    box-shadow: 1px 5px 16px 0px rgba(51, 51, 51, 0.33);
+    margin-bottom: 30px;
+    transform: scale(1);
+    transition: all 0.1s ease 0.1s;
+    width: 85%;
+    height: auto;
+    display: block;
+    height: 100%;
+}
+
+// .common-field:hover .content-inside img {
+//     transform: scale(1.05);
+//     transition: all 0.1s ease 0.1s;
+// }
+// .main-content .content-img img {
+//     width: 200px;
+// }
+//new
+.main-content .content-img img {
+    width: 120px;
+}
+
+.main-content .content-common .title-common h4 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+// .main-content .content-common .title-common p {
+//     font-size: 14px;
+//     line-height: 20px;
+// }
+//new
+.main-content .content-common .title-common p {
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 550px;
+    width: 100%;
+}
+
+.common-field {
+    position: relative;
+    margin: 20px;
+    z-index: 2;
+}
+
+.field-items {
+    margin-bottom: 30px;
+}
+
+.field-items h4 {
+    margin-bottom: 30px !important;
+}
+
+.integration {
+    padding: 0px 0px 80px;
+}
+
+.title-common h4 {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 800;
+    color: #111B47;
+}
+
+.integrated-patner img {
+    width: 120px;
+    margin: 0 auto;
+}
+
+.integrated-patner {
+    text-align: center;
+}
+
+//new
+.content-common.content-right {
+    justify-content: flex-end;
+}
+
+.content-img.right-margin {
+    margin-right: 0;
+    margin-left: 50px;
+}
+
+.content-right .title-common {
+    text-align: right;
+}

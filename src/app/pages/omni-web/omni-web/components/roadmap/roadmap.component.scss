@@ -1,0 +1,137 @@
+.road-map {
+    padding: 150px 0px 80px;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    color: #111B47;
+    font-size: 96px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.add-request {
+    text-align: center;
+}
+
+.add-request .btn {
+    background-color: #111B47;
+    color: #fff;
+    padding: 7px 35px;
+    text-transform: capitalize;
+}
+
+.add-request .btn:hover {
+    background-color: #6F7CB2;
+    transition: all 0.1s ease 0.1s;
+}
+
+// .road-map-table {
+//     padding: 0px 0px 0px;
+// }
+// table
+.table td,
+.table th {
+    border-top: 0px;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 3px solid #C8CACD;
+}
+
+.table tbody td {
+    padding: 1rem;
+    vertical-align: top;
+}
+
+.request-common {
+    display: flex;
+    align-items: center;
+}
+
+.request-text {
+    margin-left: 15px;
+}
+
+.request-field {
+    text-align: center;
+    width: 100px;
+    max-width: 56px;
+}
+
+.request-field img {
+    width: 25px;
+}
+
+.request-number {
+    display: block;
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #111B47;
+}
+
+.request-field i {
+    font-size: 38px;
+    color: #111B47;
+}
+
+.request-text span {
+    font-size: 24px;
+    color: #6F7CB2;
+}
+
+.table-btn {
+    margin-top: 10px;
+}
+
+.table-title {
+    font-size: 36px;
+    color: #111B47;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.table-btn .btn {
+    color: #111B47;
+    line-height: 16px;
+    height: 36px;
+    min-width: 190px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+.table-btn .btn.blue {
+    background-color: #2D9CDB;
+}
+
+.table-btn .btn.yellow {
+    background-color: #F2994A;
+}
+
+.table-btn .btn.green {
+    background-color: #6FCF97;
+}
+
+//add css 15-12-2020
+.setCursor {
+    cursor: pointer;
+}
+
+.UniqueEmailError {
+    /* display: none; */
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.modal-dialog {
+    margin-top: 150px !important;
+}
